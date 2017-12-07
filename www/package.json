@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "bulma": "^0.6.1",
     "gatsby": "^1.9.127",
     "gatsby-link": "^1.6.30",
     "gatsby-plugin-react-helmet": "^1.0.8",
@@ -32,6 +33,10 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-jsx-a11y": "^5.1.1",
     "eslint-plugin-react": "^7.1.0",
-    "babel-eslint": "^7.2.3"
+    "babel-eslint": "^7.2.3",
+    "autoprefixer": "^7.1.2",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^4.1.1"
   }
 }
