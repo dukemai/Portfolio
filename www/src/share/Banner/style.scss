@@ -1,0 +1,49 @@
+@import '../../common.scss';
+
+.banner{
+    background: $c_black_base;
+    color: $c_white_base;
+    text-align: center;
+    background-image: url('../../../public/static/sanctions.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    &__inner{
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    @include common-padding();
+
+    &__title{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    &__subtitle{
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+    }
+}
+
+@media #{$tablet} {
+  .banner{
+      height: 500px;
+      display: flex;
+      align-items: center;
+
+      &__inner{
+          box-sizing: border-box;
+          width: 80%;
+          margin: 0 auto;
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          padding: 0 20px
+      }
+
+      &__title{
+          margin-top: 70px;
+      }
+  }
+}

@@ -1,11 +1,17 @@
 import React from 'react';
-import Link from 'gatsby-link';
+
+import { Banner, Services, Contact } from '../share';
+
+import './index.scss';
 
 const IndexPage = () => (
-  <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+  <div className="page page--home">
+    <Banner />
+    <Services />
+    <p className="page__recommendation">
+      Recommendations upon request.
+    </p>
+    <Contact />
   </div>
 );
 

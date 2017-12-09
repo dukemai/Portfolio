@@ -1,0 +1,44 @@
+@import '../../common.scss';
+
+.contact{
+    @include common-padding();
+    background: #ddd;
+
+    &__title{
+        font-size: 1.875rem;
+        color: #000;
+    }
+
+    &__row{
+        display: flex;
+        align-items: center;
+
+        & .material-icons{
+            margin-right: 10px;
+        }
+
+        &--text{
+            font-weight: bold;
+            border-top: 1px solid #000;
+            margin-top: 10px;
+            color: #000;
+        }
+
+        &--info{
+            padding: 5px 0;
+        }
+    }
+}
+
+@media #{$tablet} {
+    .contact{
+        max-width: $c_width_large;
+        margin: 10px auto;
+        box-sizing: border-box;
+        color: $c_blue_base;
+    }
+}
+
+.mail-to{
+    color: $c_blue_base;
+}

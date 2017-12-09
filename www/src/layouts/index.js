@@ -1,24 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import 'bulma/css/bulma.css';
 
-import Header from './Header';
+import './index.css';
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Portfolio"
+      title="International Sanction"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { charset: 'utf-8' },
+        { name: 'description', content: 'International Sanction' },
+        { name: 'keywords', content: 'International Sanction' },
+        { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ]}
-    />
+    >
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
+    </Helmet>
     <div className="container is-fluid" >
-      <Header />
-      <div>
-        {children()}
-      </div>
+      {children()}
     </div>
   </div>
 );
