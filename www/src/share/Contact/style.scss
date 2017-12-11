@@ -19,7 +19,6 @@
 
         &--text{
             font-weight: bold;
-            border-top: 1px solid #000;
             margin-top: 10px;
             color: #000;
         }
@@ -41,4 +40,5 @@
 
 .mail-to{
     color: $c_blue_base;
+    text-decoration: none;
 }
