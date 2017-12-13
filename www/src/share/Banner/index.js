@@ -12,12 +12,21 @@ const Banner = ({ }) => (
   <div className="banner">
     <div className="banner__inner">
       <h1 className="banner__title">
-        International Sanctions Advice
+        International Sanctions
       </h1>
       <p className="banner__subtitle">
-        . Stockholm .
+        <span className="banner__subtitle-dot">
+          .
+        </span>
+        <span className="banner__subtitle-location">
+          Stockholm
+        </span>
+        <span className="banner__subtitle-dot">
+          .
+        </span>
       </p>
     </div>
+    <div className="banner__overlay" />
   </div>
 );
 

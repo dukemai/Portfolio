@@ -10,6 +10,7 @@
     "gatsby-plugin-react-helmet": "^1.0.8",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-document-meta": "^2.1.2",
     "react-helmet": "^5.2.0"
   },
   "keywords": [

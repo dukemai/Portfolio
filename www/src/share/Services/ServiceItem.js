@@ -3,20 +3,25 @@ import PropTypes from 'prop-types';
 
 const propTypes = {
   text: PropTypes.string,
-  icon: PropTypes.string,
+  isLeftAlign: PropTypes.bool,
 };
 const defaultProps = {
   text: '',
-  icon: '',
+  isLeftAlign: false,
 };
 
-const ServicesItem = ({ text, icon }) => (
-  <li className="service-item">
-    <div className="service-item__inner">
-      <i className="material-icons">{icon}</i>{text}
-    </div>
-  </li>
-);
+const ServicesItem = ({ text, isLeftAlign }) => {
+  const className = isLeftAlign ? 'service-item--left' : 'service-item--right';
+  return (
+    <li className={`service-item ${className}`}>
+      <div className="service-item__inner">
+        {text}
+      </div>
+      <div className="service-item__empty" />
+      <i className="service-item__circle" />
+    </li>
+  );
+};
 
 ServicesItem.propTypes = propTypes;
 ServicesItem.defaultProps = defaultProps;

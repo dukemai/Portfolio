@@ -16,17 +16,17 @@ const Contact = ({ }) => (
       Contact
     </h3>
     <div className="contact__row contact__row--info">
-      <i className="material-icons">contact_mail</i>
       <MailTo to="contact@international-sanctions.com" />
     </div>
     <div className="contact__row contact__row--text">
-      Or contact Christoffer Berg directly
+      Christoffer Berg
     </div>
     <div className="contact__row contact__row--info">
-      <i className="material-icons">call</i>+46 70 37 89 600
+      <a className="contact__row-phone" href="tel:46-70-37-89-600">
+        +46 70 37 89 600
+      </a>
     </div>
     <div className="contact__row contact__row--info">
-      <i className="material-icons">contact_mail</i>
       <MailTo to="christoffer.berg@international-sanctions.com" />
     </div>
   </div>
