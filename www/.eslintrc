@@ -15,6 +15,9 @@
    "plugins": [
     "babel"
   ],
+  "globals": {
+    "graphql": true
+  },
   "env": {
     "browser": true,
     "node": true

@@ -57,10 +57,15 @@
       }
   }
   .page__recommendation{
-      font-size: 1.875rem;
+      font-size: 1.125rem;
       padding: 45px 0 20px;
       max-width: $c_width_large;
       box-sizing: border-box;
       margin: 60px auto 0;
   }
+}
+@media #{$desktop} {
+   .page__recommendation{
+        font-size: 1.875rem;
+    }
 }
