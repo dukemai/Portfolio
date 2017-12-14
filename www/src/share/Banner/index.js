@@ -4,15 +4,17 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 const propTypes = {
+  title: PropTypes.string,
 };
 const defaultProps = {
+  title: 'International Sanctions',
 };
 
-const Banner = ({ }) => (
+const Banner = ({ title }) => (
   <div className="banner">
     <div className="banner__inner">
       <h1 className="banner__title">
-        International Sanctions
+        {title}
       </h1>
       <p className="banner__subtitle">
         <span className="banner__subtitle-dot">
