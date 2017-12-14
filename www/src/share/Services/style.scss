@@ -50,8 +50,6 @@ $c_r: 16px;
 
         &--left{
             & .service-item__inner{
-                text-align: right;
-                padding-right: 30px;
             }
         }
     }
@@ -82,7 +80,10 @@ $c_r: 16px;
             }
 
             &--left{
-                
+                & .service-item__inner{
+                    text-align: right;
+                    padding-right: 30px;
+                }
             }
         }
     }

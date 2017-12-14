@@ -16,7 +16,9 @@ const ServicesItem = ({ text, isLeftAlign }) => {
     <li className={`service-item ${className}`}>
       <div className="service-item__inner">
         <i className="service-item__circle" />
-        {text}
+        <span className="service-item__text">
+          {text}
+        </span>
       </div>
       <div className="service-item__empty" />
     </li>
