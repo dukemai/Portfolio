@@ -15,10 +15,10 @@ const ServicesItem = ({ text, isLeftAlign }) => {
   return (
     <li className={`service-item ${className}`}>
       <div className="service-item__inner">
+        <i className="service-item__circle" />
         {text}
       </div>
       <div className="service-item__empty" />
-      <i className="service-item__circle" />
     </li>
   );
 };
