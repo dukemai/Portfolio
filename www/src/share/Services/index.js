@@ -15,12 +15,12 @@ const providingSerivces = [
     text: 'Up to date legal counsel on EU and US sanctions',
   },
   {
-    icon: 'live_help',
-    text: 'Advice on legal recourse',
-  },
-  {
     icon: 'data_usage',
     text: 'Analysis of political processes and geopolitical frameworks with regard to sanctions',
+  },
+  {
+    icon: 'live_help',
+    text: 'Advice on legal recourse',
   },
   {
     icon: 'get_app',

@@ -1,0 +1,88 @@
+@import '../../common.scss';
+
+.portrait{
+    margin: 0 auto 20px;
+    @include common-padding();
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    &__image{
+        width: 100%;
+        position: absolute;
+
+        &-wrapper{
+            position: relative;
+            padding-bottom: 132.9%;
+        }
+    }
+
+    &__right{
+        order: 1;
+    }
+
+    &__text{
+        order: 2;
+
+        &-inner{
+            margin-top: 9px;
+        }
+
+        &-credit{
+            margin-top: 20px;
+
+            &__name{
+                font-size: 1.25rem;
+                line-height: 1.5rem;
+            }
+
+            &__role{
+                clear: both;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+@media #{$tablet} {
+  .portrait{
+      max-width: $c_width_large;
+      margin-top: 80px;
+      margin-bottom: 0;
+      flex-direction: row;
+      position: relative;
+
+      &::before{
+          content: "";
+          position: absolute;
+          border-top: 1px solid $c_grey_base;
+          width: 400px;
+          top: -40px;
+          left: 50%;
+          margin-left: -200px;
+      }
+
+      &__text{
+        flex-basis: 50%;
+        order: 1;
+        position: relative;
+
+        &-inner{
+            margin-right: 30px;
+            margin-top: 0;
+            position: absolute;
+            bottom: 0;
+        }
+      }
+
+      &__right{
+          flex: 1;
+          order: 2;
+          margin-top: 0;
+      }
+
+      &__image{
+          margin-left: 0;
+      }
+  }
+}    
