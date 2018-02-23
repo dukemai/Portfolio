@@ -34,4 +34,5 @@ const Banner = ({ title }) => (
 
 Banner.propTypes = propTypes;
 Banner.defaultProps = defaultProps;
+
 export default Banner;
