@@ -72,6 +72,8 @@
             margin-top: 0;
             position: absolute;
             bottom: 0;
+            right: 0;
+            width: 80%;
         }
       }
 
@@ -79,6 +81,10 @@
           flex: 1;
           order: 2;
           margin-top: 0;
+
+          &-inner{
+              width: 80%;
+          }
       }
 
       &__image{

@@ -31,8 +31,10 @@ const Portrait = () => (
       </div>
     </div>
     <div className="portrait__right">
-      <div className="portrait__image-wrapper">
-        <img className="portrait__image" src="/static/Christoffer_Portrait.jpg" alt="Christoffer Berg" />
+      <div className="portrait__right-inner">
+        <div className="portrait__image-wrapper">
+          <img className="portrait__image" src="/static/Christoffer_Portrait.jpg" alt="Christoffer Berg" />
+        </div>
       </div>
     </div>
   </div>
