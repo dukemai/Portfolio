@@ -4,11 +4,9 @@ import { Banner, Services, Contact, Portrait } from '../share';
 
 import './index.scss';
 
-const IndexPage = ({ data }) =>{
-  console.log(data)
-  return (
+const IndexPage = ({ data }) => (
   <div className="page page--home">
-    <Banner title={data.markdownRemark.frontmatter.title} />
+    <Banner />
     <Services />
     <Portrait />
     <p className="page__recommendation">
@@ -17,16 +15,5 @@ const IndexPage = ({ data }) =>{
     <Contact />
   </div>
 );
-} 
-
-export const query = graphql`
-query indexQuery {
-  markdownRemark(frontmatter: {pageId: {eq: "Page-Settings"}}) {
-    frontmatter {
-      title
-    }
-  }    
-}
-`;
 
 export default IndexPage;
