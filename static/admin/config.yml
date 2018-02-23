@@ -1,9 +1,8 @@
 backend:
-  name: Portfolio
-  branch: master
-  repo: dukemai/Portfolio
+  name: github
+  repo: dukemai/Portfolio #replace with your username/repo
 
-media_folder: static/img
+media_folder: static/assets
 
 collections:
   - name: blog
