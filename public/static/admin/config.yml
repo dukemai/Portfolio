@@ -1,9 +1,9 @@
 backend:
   name: Portfolio
   branch: master
+  repo: dukemai/Portfolio
 
 media_folder: static/img
-public_folder: /img
 
 collections:
   - name: blog
