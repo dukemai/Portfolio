@@ -4,17 +4,19 @@ import PropTypes from 'prop-types';
 import './style.scss';
 
 const propTypes = {
+  quote: PropTypes.string,
 };
 const defaultProps = {
+  quote: `"I help you or your company comply with international sanctions law while avoiding 
+            unnecessary loss of business opportunities."`,
 };
-const Portrait = () => (
+const Portrait = ({ quote }) => (
   <div className="portrait">
     <div className="portrait__text">
       <div className="portrait__text-inner">
         <p>
           <i>
-            "I help you or your company comply with international sanctions law while avoiding 
-            unnecessary loss of business opportunities."
+            {quote}
           </i>
         </p>
         <div className="portrait__text-credit">
