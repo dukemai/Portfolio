@@ -4,17 +4,31 @@ import { Banner, Services, Contact, Portrait } from '../share';
 
 import './index.scss';
 
-const IndexPage = ({ data }) => (
-  <div className="page page--home">
-    <Banner title={data.markdownRemark.frontmatter.title} />
-    <Services />
-    <Portrait quote={data.markdownRemark.frontmatter.quote} />
-    <p className="page__recommendation">
-      Recommendations upon request.
+const IndexPage = ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
+  return (
+    <div className="page page--home">
+      <Banner title={frontmatter.title} />
+      <Services
+        services={frontmatter.services.map(item => ({ text: item.service }))}
+      />
+      <Portrait
+        quote={frontmatter.quote}
+        credit={frontmatter.credit}
+        positions={frontmatter.positions.former.map(item => item.position)}
+      />
+      <p className="page__recommendation">
+        Recommendations upon request.
     </p>
-    <Contact />
-  </div>
-);
+      <Contact
+        contactEmail={frontmatter.contactEmail}
+        contactName={frontmatter.contactName}
+        contactNumber={frontmatter.contactNumber}
+        contactPersonalEmail={frontmatter.contactPersonalEmail}
+      />
+    </div>
+  );
+}
 
 export const query = graphql`
 query indexQuery {
@@ -22,6 +36,19 @@ query indexQuery {
     frontmatter {
       title
       quote
+      credit
+      positions{
+        former{
+          position
+        }
+      }
+      services{
+        service
+      }
+      contactEmail
+      contactName
+      contactNumber
+      contactPersonalEmail
     }
   }    
 }

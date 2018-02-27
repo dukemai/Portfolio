@@ -6,28 +6,36 @@ import MailTo from './MailTo';
 import './style.scss';
 
 const propTypes = {
+  contactName: PropTypes.string,
+  contactNumber: PropTypes.string,
+  contactPersonalEmail: PropTypes.string,
+  contactEmail: PropTypes.string,
 };
 const defaultProps = {
+  contactName: '',
+  contactNumber: '',
+  contactPersonalEmail: '',
+  contactEmail: '',
 };
 
-const Contact = ({ }) => (
+const Contact = ({ contactName, contactNumber, contactPersonalEmail, contactEmail }) => (
   <div className="contact">
     <h3 className="contact__title">
       Contact
     </h3>
     <div className="contact__row contact__row--info">
-      <MailTo to="contact@international-sanctions.com" />
+      <MailTo to={contactEmail} />
     </div>
     <div className="contact__row contact__row--text">
-      Christoffer Berg
+      {contactName}
     </div>
     <div className="contact__row contact__row--info">
-      <a className="contact__row-phone" href="tel:46-70-37-89-600">
-        +46 70 37 89 600
+      <a className="contact__row-phone" href={`tel:${contactNumber}`}>
+        {contactNumber}
       </a>
     </div>
     <div className="contact__row contact__row--info">
-      <MailTo to="christoffer.berg@international-sanctions.com" />
+      <MailTo to={contactPersonalEmail} />
     </div>
   </div>
 );

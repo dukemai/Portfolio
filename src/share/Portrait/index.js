@@ -5,12 +5,16 @@ import './style.scss';
 
 const propTypes = {
   quote: PropTypes.string,
+  credit: PropTypes.string,
+  positions: PropTypes.arrayOf(PropTypes.string),
 };
 const defaultProps = {
   quote: `"I help you or your company comply with international sanctions law while avoiding 
             unnecessary loss of business opportunities."`,
+  credit: 'Christoffer Berg',
+  positions: ['Former senior diplomat', 'Founder of International Sanctions'],
 };
-const Portrait = ({ quote }) => (
+const Portrait = ({ quote, credit, positions }) => (
   <div className="portrait">
     <div className="portrait__text">
       <div className="portrait__text-inner">
@@ -21,14 +25,15 @@ const Portrait = ({ quote }) => (
         </p>
         <div className="portrait__text-credit">
           <div className="portrait__text-credit__name">
-            Christoffer Berg
+            {credit}
           </div>
-          <div className="portrait__text-credit__role">
-            Former senior diplomat
-          </div>
-          <div>
-            Founder of International Sanctions
-          </div>
+          {
+            positions.map((position, key) => (
+              <div key={key} className="portrait__text-credit__role">
+                {position}
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
