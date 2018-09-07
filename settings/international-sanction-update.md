@@ -6,7 +6,7 @@ pageId: Page-Settings
 credit: Christoffer Berg
 positions:
   former:
-    - position: Former senior diplomat
+    - position: Former senior diplomat and Government Sanctions coordinator
     - position: Founder of International Sanctions
 
 services:
@@ -21,6 +21,7 @@ quote: "\"I help you or your company comply with international sanctions law whi
 contactEmail: contact@international-sanctions.com
 contactName: Christoffer Berg
 contactNumber: +46 70 37 89 600
+contactNumber2: +1 (817) 771 0482
 contactPersonalEmail: christoffer.berg@international-sanctions.com
 ---
 

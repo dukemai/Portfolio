@@ -18,7 +18,7 @@ const defaultProps = {
   contactEmail: '',
 };
 
-const Contact = ({ contactName, contactNumber, contactPersonalEmail, contactEmail }) => (
+const Contact = ({ contactName, contactNumber, contactNumber2, contactPersonalEmail, contactEmail }) => (
   <div className="contact">
     <h3 className="contact__title">
       Contact
@@ -32,6 +32,11 @@ const Contact = ({ contactName, contactNumber, contactPersonalEmail, contactEmai
     <div className="contact__row contact__row--info">
       <a className="contact__row-phone" href={`tel:${contactNumber}`}>
         {contactNumber}
+      </a>
+    </div>
+    <div className="contact__row contact__row--info">
+      <a className="contact__row-phone" href={`tel:${contactNumber2}`}>
+        {contactNumber2}
       </a>
     </div>
     <div className="contact__row contact__row--info">

@@ -24,6 +24,7 @@ const IndexPage = ({ data }) => {
         contactEmail={frontmatter.contactEmail}
         contactName={frontmatter.contactName}
         contactNumber={frontmatter.contactNumber}
+        contactNumber2={frontmatter.contactNumber2}
         contactPersonalEmail={frontmatter.contactPersonalEmail}
       />
     </div>
@@ -48,6 +49,7 @@ query indexQuery {
       contactEmail
       contactName
       contactNumber
+      contactNumber2
       contactPersonalEmail
     }
   }    
