@@ -23,7 +23,6 @@ const IndexPage = ({ data }) => {
       <Contact
         contactEmail={frontmatter.contactEmail}
         contactName={frontmatter.contactName}
-        contactNumber={frontmatter.contactNumber}
         contactNumber2={frontmatter.contactNumber2}
         contactPersonalEmail={frontmatter.contactPersonalEmail}
       />

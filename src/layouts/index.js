@@ -15,7 +15,11 @@ const TemplateWrapper = ({ children }) => (
       meta={[
         { charset: 'utf-8' },
         { name: 'description', content: description },
-        { name: 'keywords', content: 'International Sanctions, counsel, law, legal, advice, EU, US, OFAC' },
+        {
+          name: 'keywords',
+          content:
+            'International Sanctions, counsel, law, legal, advice, EU, US, OFAC',
+        },
         { 'http-equiv': 'X-UA-Compatible', content: 'IE=edge' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         {
@@ -24,7 +28,8 @@ const TemplateWrapper = ({ children }) => (
         },
         {
           property: 'og:title',
-          content: 'International Sanction, Up to date legal counsel, Advice and analysis on legal',
+          content:
+            'International Sanction, Up to date legal counsel, Advice and analysis on legal',
         },
         {
           property: 'og:locale',
@@ -34,18 +39,21 @@ const TemplateWrapper = ({ children }) => (
           property: 'og:description',
           content: description,
         },
-        { property: 'og:image', content: 'http://international-sanctions.com/static/North_face.d8c89915.jpg' },
+        {
+          property: 'og:image',
+          content:
+            'http://international-sanctions.com/static/North_face.d8c89915.jpg',
+        },
       ]}
     >
-      <link
-        rel="icon"
-        type="image/x-icon"
-        href="/static/favicon.ico"
-      />
+      <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
     </Helmet>
-    <div className="container is-fluid" >
-      {children()}
-    </div>
+    <div className="container is-fluid">{children()}</div>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-155113124-1"
+    ></script>
+    <script async src="/static/ga.js"></script>
   </div>
 );
 

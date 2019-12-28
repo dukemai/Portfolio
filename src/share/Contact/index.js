@@ -18,27 +18,34 @@ const defaultProps = {
   contactEmail: '',
 };
 
-const Contact = ({ contactName, contactNumber, contactNumber2, contactPersonalEmail, contactEmail }) => (
+const Contact = ({
+  contactName,
+  contactNumber,
+  contactNumber2,
+  contactPersonalEmail,
+  contactEmail,
+}) => (
   <div className="contact">
-    <h3 className="contact__title">
-      Contact
-    </h3>
+    <h3 className="contact__title">Contact</h3>
     <div className="contact__row contact__row--info">
       <MailTo to={contactEmail} />
     </div>
-    <div className="contact__row contact__row--text">
-      {contactName}
-    </div>
-    <div className="contact__row contact__row--info">
-      <a className="contact__row-phone" href={`tel:${contactNumber}`}>
-        {contactNumber}
-      </a>
-    </div>
-    <div className="contact__row contact__row--info">
-      <a className="contact__row-phone" href={`tel:${contactNumber2}`}>
-        {contactNumber2}
-      </a>
-    </div>
+    <div className="contact__row contact__row--text">{contactName}</div>
+    {contactNumber && (
+      <div className="contact__row contact__row--info">
+        <a className="contact__row-phone" href={`tel:${contactNumber}`}>
+          {contactNumber}
+        </a>
+      </div>
+    )}
+    {contactNumber2 && (
+      <div className="contact__row contact__row--info">
+        <a className="contact__row-phone" href={`tel:${contactNumber2}`}>
+          {contactNumber2}
+        </a>
+      </div>
+    )}
+
     <div className="contact__row contact__row--info">
       <MailTo to={contactPersonalEmail} />
     </div>

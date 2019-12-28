@@ -7,7 +7,7 @@ credit: Christoffer Berg
 positions:
   former:
     - position: Former senior diplomat and Government Sanctions coordinator
-    - position: Founder of International Sanctions
+    - position: Founder of International Sanctions LLC
 
 services:
   - service: Up to date legal counsel on EU and US sanctions
