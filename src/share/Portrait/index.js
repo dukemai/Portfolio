@@ -11,8 +11,8 @@ const propTypes = {
 const defaultProps = {
   quote: `"I help you or your company comply with international sanctions law while avoiding 
             unnecessary loss of business opportunities."`,
-  credit: 'Christoffer Berg',
-  positions: ['Former senior diplomat', 'Founder of International Sanctions'],
+  credit: 'Carl (Christoffer) Berg',
+  positions: ['Former senior diplomat', 'Founder of International Sanctions', 'll.m, cams, cgss'],
 };
 const Portrait = ({ quote, credit, positions }) => (
   <div className="portrait">

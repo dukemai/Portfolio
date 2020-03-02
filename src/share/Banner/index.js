@@ -1,26 +1,19 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 
-import './style.scss';
+import "./style.scss";
 
 const propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string
 };
 const defaultProps = {
-  title: 'International Sanctions',
+  title: "International Sanctions"
 };
 
 const Banner = ({ title }) => (
   <div className="banner">
     <div className="banner__inner">
       <h1 className="banner__title">{title}</h1>
-      <p className="banner__subtitle">
-        <span className="banner__subtitle-dot">.</span>
-        <span className="banner__subtitle-location">LL.M., CAMS, CGSS</span>
-        <span className="banner__subtitle-dot">.</span>
-        <span className="banner__subtitle-location">Stockholm</span>
-        <span className="banner__subtitle-dot">.</span>&nbsp;
-      </p>
     </div>
     <div className="banner__overlay" />
   </div>

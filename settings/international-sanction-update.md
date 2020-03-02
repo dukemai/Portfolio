@@ -3,11 +3,12 @@ logo: logo
 date: 2018-02-23T19:13:02.035Z
 title: International Sanctions
 pageId: Page-Settings
-credit: Christoffer Berg
+credit: Carl (Christoffer) Berg
 positions:
   former:
     - position: Former senior diplomat and Government Sanctions coordinator
     - position: Founder of International Sanctions LLC
+    - position: ll.m, cams, cgss
 
 services:
   - service: Up to date legal counsel on EU and US sanctions
@@ -19,7 +20,7 @@ quote: "\"I help you or your company comply with international sanctions law whi
             unnecessary loss of business opportunities.\""
 
 contactEmail: contact@international-sanctions.com
-contactName: Christoffer Berg
+contactName: Carl (Christoffer) Berg
 contactNumber: +46 70 37 89 600
 contactNumber2: +1 (817) 771 0482
 contactPersonalEmail: christoffer.berg@international-sanctions.com
