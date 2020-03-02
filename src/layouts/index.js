@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children }) => (
     >
       <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
     </Helmet>
-    <div className="container is-fluid">{children()}</div>
+    <div className="container is-fluid">{children}</div>
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-155113124-1"
@@ -58,7 +58,7 @@ const TemplateWrapper = ({ children }) => (
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.node,
 };
 
 export default TemplateWrapper;

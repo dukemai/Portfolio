@@ -16,7 +16,7 @@ const Banner = ({ title }) => (
       <h1 className="banner__title">{title}</h1>
       <p className="banner__subtitle">
         <span className="banner__subtitle-dot">.</span>
-        <span className="banner__subtitle-location">Dallas/Fort Worth</span>
+        <span className="banner__subtitle-location">LL.M., CAMS, CGSS</span>
         <span className="banner__subtitle-dot">.</span>
         <span className="banner__subtitle-location">Stockholm</span>
         <span className="banner__subtitle-dot">.</span>&nbsp;

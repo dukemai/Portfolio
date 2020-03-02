@@ -11,21 +11,6 @@ const defaultProps = {
   services: [],
 };
 
-const providingSerivces = [
-  {
-    text: 'Up to date legal counsel on EU and US sanctions',
-  },
-  {
-    text: 'Analysis of political processes and geopolitical frameworks with regard to sanctions',
-  },
-  {
-    text: 'Advice on legal recourse',
-  },
-  {
-    text: 'Access to related services',
-  },
-];
-
 const Services = ({ services }) => (
   <div className="services">
     <h3>
