@@ -8,7 +8,7 @@ positions:
   former:
     - position: Former senior diplomat and Government Sanctions coordinator
     - position: Founder of International Sanctions LLC
-    - position: ll.m, cams, cgss
+    - position: LL.M, CAMS, CGSS
 
 services:
   - service: Up to date legal counsel on EU and US sanctions
